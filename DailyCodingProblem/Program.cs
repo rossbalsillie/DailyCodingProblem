@@ -11,9 +11,21 @@ namespace DailyCodingProblem
         static void Main(string[] args)
         {
             int[] firstNumbers = displayFirstNumbers();
+            int[] productNumbers;
             for (int i = 0; i < firstNumbers.Length; i++)
             {
-                
+                for (int x = 0; x < firstNumbers.Length; x++)
+                {
+                    int newNumber = firstNumbers[i];
+                    if (i == x)
+                    {
+                        continue;
+                    } else
+                    {
+                        newNumber *= firstNumbers[x];
+                    }
+                    productNumbers[i] = newNumber;
+                }
             }
             Console.ReadKey();
         }
