@@ -29,9 +29,12 @@ namespace DailyCodingProblem_3
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
+            //Binary Tree library? Implement own?
+            //Node class would need to be implemented as well.
+
             Console.WriteLine("Hello World!");
-            Console.ReadKey();            
+            Console.ReadKey();
         }
     }
 }
