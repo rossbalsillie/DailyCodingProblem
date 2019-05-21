@@ -15,7 +15,8 @@ namespace DailyCodingProblem_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please provide a space seperated list of integers");
+            
             Console.ReadKey();
         }
 
@@ -23,6 +24,7 @@ namespace DailyCodingProblem_4
         {
             //Only works currently for sorted lists
             //Needs reworked to function correctly for unsorted lists
+            ints.Sort();
             int lowestPositiveInteger = 1;
             foreach (int number in ints)
             {
