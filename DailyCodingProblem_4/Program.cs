@@ -15,8 +15,11 @@ namespace DailyCodingProblem_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please provide a space seperated list of integers");
-            
+            //Get the list of integers from the user
+            DCP4 dcp4 = new DCP4();
+            List<int> inputtedIntegers = dcp4.GetListOfNumbersInput();
+            int lowestPositiveInt = dcp4.FindLowestPositiveInteger(inputtedIntegers);
+            Console.WriteLine(string.Format("The lowest possible integer out of the list provided was {0}", lowestPositiveInt));
             Console.ReadKey();
         }
 
@@ -34,6 +37,22 @@ namespace DailyCodingProblem_4
                 }
             }
             return lowestPositiveInteger;
+        }
+
+        //Gets the list of integers inputted from the user and casts them into a new list of ints
+        public List<int> GetListOfNumbersInput()
+        {
+            Console.WriteLine("Please Provide a list of space separated numbers!");
+            List<string> listOfStrings = new List<string>(Console.ReadLine().Split(' '));
+            List<int> listOfIntegers = new List<int>();
+            foreach (string item in listOfStrings)
+            {
+                if (int.TryParse(item, out int intConverted))
+                {
+                    listOfIntegers.Add(intConverted);
+                }
+            }            
+            return listOfIntegers;
         }
 
     }
