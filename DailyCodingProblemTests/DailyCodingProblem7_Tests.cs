@@ -20,10 +20,11 @@ namespace DailyCodingProblemTests
         public void Decode_111_To_All_Possibilities()
         {
             //Arrange
-            string input = "aaa";
+            Mapping map = new Mapping();            
+            string input = "111";
             int expected = 3;
             //Act
-            int actual = _DCP7.FindAllPossibleDecodings(input);
+            int actual = _DCP7.FindAllPossibleDecodings(input, map.GetMap());
             //Assert
             Assert.AreEqual(expected, actual);
         }

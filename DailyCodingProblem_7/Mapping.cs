@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DailyCodingProblem_7
 {
-    class Mapping
+    public class Mapping
     {
         Dictionary<string, int> _dict;
         public Mapping()

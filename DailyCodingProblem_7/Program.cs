@@ -21,8 +21,9 @@ namespace DailyCodingProblem_7
             Dictionary<string, int> dict = map.GetMap();
         }
 
-        public int FindAllPossibleDecodings(string input)
+        public int FindAllPossibleDecodings(string input, Dictionary<string, int> dict)
         {
+
             return 0;
         }
 
