@@ -19,8 +19,11 @@ namespace DailyCodingProblem_5
     class DCP5
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+        {            
+            Cons cons = new Cons();
+            Console.WriteLine(string.Format("The first element is {0}",cons.Car(cons.Construct("3", "4"))));
+            Console.WriteLine(string.Format("The last element is {0}", cons.Cdr(cons.Construct("3", "4"))));
+            Console.ReadKey();
         }
     }
 }
