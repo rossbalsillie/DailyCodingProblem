@@ -8,14 +8,23 @@ For example, the message '111' would give 3, since it could be decoded as 'aaa',
 
 You can assume that the messages are decodable. For example, '001' is not allowed.*/
 using System;
+using System.Collections.Generic;
 
 namespace DailyCodingProblem_7
 {
-    class Program
+    public class DCP7
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Mapping map = new Mapping();
+            Dictionary<string, int> dict = map.GetMap();
         }
+
+        public int FindAllPossibleDecodings(string input)
+        {
+            return 0;
+        }
+
     }
 }
