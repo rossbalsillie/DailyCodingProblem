@@ -18,25 +18,19 @@ namespace DailyCodingProblem_4
             //Get the list of integers from the user
             DCP4 dcp4 = new DCP4();
             List<int> inputtedIntegers = dcp4.GetListOfNumbersInput();
-            int lowestPositiveInt = dcp4.FindLowestPositiveIntegerNotInList(inputtedIntegers);
+            int lowestPositiveInt = dcp4.GetLowestIntInList(inputtedIntegers, 1);
             Console.WriteLine(string.Format("The lowest possible integer out of the list provided was {0}", lowestPositiveInt));
             Console.ReadKey();
         }
 
-        public int FindLowestPositiveIntegerNotInList(List<int> ints)
-        {
-            //Only works currently for sorted lists
-            //Needs reworked to function correctly for unsorted lists
-            ints.Sort();
-            int lowestPositiveInteger = 1;
-            foreach (int number in ints)
+        public int GetLowestIntInList(List<int> list, int inputtedInt)
+        {            
+            if (list.Contains(inputtedInt))
             {
-                if (number == lowestPositiveInteger)
-                {
-                    lowestPositiveInteger++;
-                }
+                inputtedInt += 1;
+                return GetLowestIntInList(list, inputtedInt);
             }
-            return lowestPositiveInteger;
+            return inputtedInt;
         }
 
         //Gets the list of integers inputted from the user and casts them into a new list of ints

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblem_4", "Dai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblemTests", "DailyCodingProblemTests\DailyCodingProblemTests.csproj", "{BFF10EF5-20DA-4F79-9CC1-212DAC9EF328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyCodingProblem_5", "DailyCodingProblem_5\DailyCodingProblem_5.csproj", "{3FB1CC61-D622-4416-A7F3-4E5FADD53A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblem_5", "DailyCodingProblem_5\DailyCodingProblem_5.csproj", "{3FB1CC61-D622-4416-A7F3-4E5FADD53A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyCodingProblem_7", "DailyCodingProblem_7\DailyCodingProblem_7.csproj", "{0419F238-C66B-4393-928C-62293096F57B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3FB1CC61-D622-4416-A7F3-4E5FADD53A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB1CC61-D622-4416-A7F3-4E5FADD53A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB1CC61-D622-4416-A7F3-4E5FADD53A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0419F238-C66B-4393-928C-62293096F57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0419F238-C66B-4393-928C-62293096F57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0419F238-C66B-4393-928C-62293096F57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0419F238-C66B-4393-928C-62293096F57B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,7 @@ namespace DailyCodingProblemTests
             List<int> ints = new List<int>() { 1, 2, 3, 4 };
             int expected = 5;
             //Act
-            int actual = _DCP4.FindLowestPositiveIntegerNotInList(ints);
+            int actual = _DCP4.GetLowestIntInList(ints, 1);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -33,7 +33,7 @@ namespace DailyCodingProblemTests
             List<int> ints = new List<int>() { 1, 3, 2 };
             int expected = 4;
             //Act
-            int actual = _DCP4.FindLowestPositiveIntegerNotInList(ints);
+            int actual = _DCP4.GetLowestIntInList(ints, 1);
             //Assert
             Assert.AreEqual(expected, actual);
         }
